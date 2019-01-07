@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>markdown_template.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="CSS/dark.css">
+
+</head>
+<body>
+<h1 id="title">Title</h1>
+<h2 id="intro">Intro</h2>
+<blockquote>
+<p>General info</p>
+</blockquote>
+<h2 id="chapter-1">Chapter 1</h2>
+<blockquote>
+<p><em><strong>Lorem</strong></em> <code>ipsum dolor</code> <em>sit</em> <strong>amet</strong>, consectetur adipiscing elit. Fusce fermentum suscipit eros, eget bibendum augue. Ut viverra nec ex a dictum. Pellentesque pharetra erat eget luctus congue. Donec commodo quam sapien, ac sollicitudin augue ullamcorper a. Sed et mollis ligula, nec aliquam ipsum. Nunc blandit vulputate purus in tempus. Sed egestas volutpat nulla, iaculis vulputate ipsum malesuada vel.</p>
+</blockquote>
+<h2 id="chapter-2">Chapter 2</h2>
+<blockquote>
+<p><em><strong>Lorem</strong></em> <code>ipsum dolor</code> <em>sit</em> <strong>amet</strong>, consectetur adipiscing elit. Fusce fermentum suscipit eros, eget bibendum augue. Ut viverra nec ex a dictum. Pellentesque pharetra erat eget luctus congue. Donec commodo quam sapien, ac sollicitudin augue ullamcorper a. Sed et mollis ligula, nec aliquam ipsum. Nunc blandit vulputate purus in tempus. Sed egestas volutpat nulla, iaculis vulputate ipsum malesuada vel.</p>
+</blockquote>
+<h2 id="code-snippets">Code snippets</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> <span class="hljs-keyword">COUNT</span>(ProductCollection.Product_ID) <span class="hljs-keyword">AS</span> <span class="hljs-string">'Unique figures'</span>
+<span class="hljs-keyword">FROM</span> ProductCollection
+<span class="hljs-keyword">WHERE</span> Collection_ID = (<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">Id</span> <span class="hljs-keyword">FROM</span> UserCollection <span class="hljs-keyword">WHERE</span> CollectionName = <span class="hljs-string">'TestCollection'</span>)
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-comment">// an example class</span>
+Class Example {
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Example _Instance = <span class="hljs-keyword">new</span> Example(<span class="hljs-number">123</span>, <span class="hljs-string">"string"</span>);
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> _SomeVar;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">string</span> _AnotherVar;
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Example</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> SomeVar, <span class="hljs-keyword">string</span> AnotherVar</span>) </span>{
+        _SomeVar = SomeVar;
+        _AnotherVar = AnotherVar;
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Example Instance {
+        <span class="hljs-keyword">get</span> {
+            <span class="hljs-keyword">return</span> _Instance;
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> GetSomeVar {
+        <span class="hljs-keyword">get</span> {
+            <span class="hljs-keyword">return</span> _SomeVar;
+        }
+    }
+}
+</div></code></pre>
+<h2 id="some-really-big-table">Some really big table</h2>
+<h2 id="table-name">Table name</h2>
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>some criteria</th>
+<th>something else</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>def</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+<tr>
+<td><strong>ghi</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+<tr>
+<td><strong>jkl</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+<tr>
+<td><strong>mno</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+<tr>
+<td><strong>pqr</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+<tr>
+<td><strong>stu</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+<tr>
+<td><strong>vwx</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+<tr>
+<td><strong>yz!</strong></td>
+<td>info</td>
+<td>some other info</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
